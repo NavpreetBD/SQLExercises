@@ -18,7 +18,7 @@ SELECT * FROM products
 ORDER BY price DESC;
 
 -- find all employees who don't have a middle initial
-SELECT * FROM employee
+SELECT * FROM employees
 WHERE middleinitial IS null;
 
 -- find distinct product prices

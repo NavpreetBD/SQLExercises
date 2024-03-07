@@ -1,7 +1,7 @@
 /* joins: select all the computers from the products table:
 using the products table and the categories table, return the product name and the category name */
 SELECT products.Name as "Product Name" , categories.Name as "Category Name"
-FROM producrts INNER JOIN categories
+FROM products INNER JOIN categories
 ON products.CategoryID = categories.CategoryID
 WHERE categories.Name = "Computers";
 
@@ -16,7 +16,7 @@ WHERE categories.Name = "Computers";
 SELECT employees.FirstName, employees.LastName, employees.EmployeeID, Sum(sales.Quantity) as total
 FROM employees
 INNER JOIN sales
-ON employees.EmployeesID = sales.EmployeeID
+ON employees.EmployeeID = sales.EmployeeID
 GROUP BY sales.EmployeeID
 ORDER BY total DESC
 LIMIT 2;
